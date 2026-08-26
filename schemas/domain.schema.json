@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://qedartifacts.org/schemas/domain-v1.json",
+  "title": "QED-AI public domain portal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "slug", "portalNumber", "portalName", "shortLabel", "canonicalUrl", "repository", "status", "scopeStatus", "metaDescription", "hero", "scopeNotice", "focus", "pathway", "apps", "methods", "theme", "contact", "legalStatus"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "portalNumber": {"type": "string"},
+    "portalName": {"type": "string"},
+    "shortLabel": {"type": "string"},
+    "canonicalUrl": {"type": "string", "format": "uri"},
+    "repository": {"type": "string", "pattern": "^qed-artifacts/[a-z0-9.-]+$"},
+    "status": {"type": "string"},
+    "scopeStatus": {"type": "string"},
+    "metaDescription": {"type": "string"},
+    "scopeNotice": {"type": "string"},
+    "contact": {"type": "string", "format": "email"},
+    "legalStatus": {"type": "string"},
+    "hero": {"$ref": "#/$defs/hero"},
+    "focus": {"$ref": "#/$defs/section"},
+    "pathway": {"$ref": "#/$defs/section"},
+    "apps": {"$ref": "#/$defs/textBlock"},
+    "methods": {"$ref": "#/$defs/methods"},
+    "theme": {"$ref": "#/$defs/theme"}
+  },
+  "$defs": {
+    "hero": {"type": "object", "required": ["lines", "lead"], "properties": {"lines": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "lead": {"type": "string"}}},
+    "item": {"type": "object", "required": ["title", "description"], "properties": {"kicker": {"type": "string"}, "title": {"type": "string"}, "description": {"type": "string"}}},
+    "textBlock": {"type": "object", "required": ["title", "note"], "properties": {"title": {"type": "string"}, "note": {"type": "string"}}},
+    "section": {"allOf": [{"$ref": "#/$defs/textBlock"}, {"type": "object", "required": ["items"], "properties": {"items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/item"}}}}]},
+    "methods": {"type": "object", "required": ["title", "lead", "principles"], "properties": {"title": {"type": "string"}, "lead": {"type": "string"}, "principles": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/item"}}}},
+    "theme": {"type": "object", "required": ["accent", "accentSoft"], "properties": {"accent": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}, "accentSoft": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}}}
+  }
+}
+

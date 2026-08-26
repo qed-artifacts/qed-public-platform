@@ -1,0 +1,11 @@
+{
+  "name": "@qed-artifacts/public-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:example": "node bin/build-domain.mjs --source examples/domain --out dist",
+    "test": "node tests/contracts.test.mjs"
+  }
+}
+

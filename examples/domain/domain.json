@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "slug": "example",
+  "portalNumber": "00",
+  "portalName": "Example Quality Portal",
+  "shortLabel": "Example Portal",
+  "canonicalUrl": "https://qedartifacts.org/example/",
+  "repository": "qed-artifacts/example",
+  "status": "Example only",
+  "scopeStatus": "Provisional",
+  "metaDescription": "A validation fixture for the QED-AI public platform.",
+  "hero": {"lines": ["Example quality,", "made reviewable."], "lead": "A representative portal used to validate the shared renderer."},
+  "scopeNotice": "This example validates the platform and is not a QED-AI program claim.",
+  "focus": {"title": "A configurable field of view.", "note": "Domain content remains separate from presentation.", "items": [{"kicker": "01 / EXAMPLE", "title": "Example focus", "description": "A bounded piece of representative public content."}]},
+  "pathway": {"title": "Change the model, then regenerate.", "note": "The platform validates the contract before publishing.", "items": [{"title": "Configure", "description": "Describe the domain in structured data."}]},
+  "apps": {"title": "Applications inherit the domain boundary.", "note": "Only unrestricted browser tools belong here."},
+  "methods": {"title": "Structure without rigidity.", "lead": "Stable contracts permit large presentation changes while preserving content.", "principles": [{"title": "Revisable", "description": "Compatible change is expected and documented."}]},
+  "theme": {"accent": "#2d6f7d", "accentSoft": "#d9e9ec"},
+  "contact": "contact@qedartifacts.org",
+  "legalStatus": "QED-AI is a Virginia nonstock corporation. Federal tax-exempt recognition is pending."
+}
+
