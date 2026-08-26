@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build:example": "node bin/build-domain.mjs --source examples/domain --out dist",
+    "scaffold:domains": "node bin/scaffold-domains.mjs",
     "test": "node tests/contracts.test.mjs"
   }
 }
-
