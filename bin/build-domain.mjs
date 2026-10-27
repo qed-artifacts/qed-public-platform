@@ -55,7 +55,7 @@ function renderIndex(domain) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(domain.portalName)} | QED-AI</title>
   <meta name="description" content="${escapeHtml(domain.metaDescription)}">
-  <meta name="theme-color" content="#14201c">
+  <meta name="theme-color" content="#173546">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${escapeHtml(domain.portalName)} | QED-AI">
   <meta property="og:description" content="${escapeHtml(domain.metaDescription)}">
