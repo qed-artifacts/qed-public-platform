@@ -8,6 +8,12 @@ This repository owns the presentation system, schemas, validation rules, and the
 reusable GitHub Pages workflow. A compatible platform change can therefore update
 many portals without duplicating source edits.
 
+The shared presentation uses the Studio dictionary's cool neutral and blue visual
+language. Version 1 `theme.accent` and `theme.accentSoft` fields remain in domain
+configurations for compatibility, while the current renderer uses a consistent
+blue action palette across portals. Domain-specific colors can be reintroduced
+only through an explicit, accessible design-system role.
+
 ## Build a portal locally
 
 ```text
